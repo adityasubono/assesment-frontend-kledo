@@ -1,73 +1,17 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Kesan 
+Mengerjakan project ini sangat menantang sekaligus menyenangkan. Dari awal, saya belajar bagaimana menyusun filter wilayah dinamis menggunakan React Router dengan mode data, mengelola state melalui query parameters, dan menjaga state tetap persisten saat browser di-refresh.
 
-Currently, two official plugins are available:
+Selain itu, implementasi Tailwind CSS memungkinkan saya membuat UI yang rapi dan konsisten, termasuk penggunaan sidebar, breadcrumb, combobox dengan ikon, dan loading state. Tantangan terbesar adalah memastikan data JSON statis bisa diakses saat deploy di GitHub Pages, sehingga saya belajar cara menyesuaikan base path Vite dan penempatan file di folder public.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Pesan
 
-## React Compiler
+Proyek ini mengajarkan pentingnya struktur dan perencanaan sebelum coding, serta pemahaman mendalam tentang state management, routing, dan deploy ke platform publik.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Selain itu, proyek ini juga menegaskan bahwa detail kecil, seperti path file statis, ikon di UI, loading state, dan pengalaman pengguna, bisa membuat perbedaan besar dalam kualitas aplikasi.
 
-## Expanding the ESLint configuration
+Ke depannya, pengalaman ini akan sangat membantu dalam membangun aplikasi multi-page, data-driven, dan user-friendly.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Live Demo
+[Live Demo](https://adityasubono.github.io/assesment-frontend-kledo/)
